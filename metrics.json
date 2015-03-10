@@ -1,6 +1,56 @@
 {
     "result": [
         {
+            "defaultAggregate": "COUNT",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of sent messages waiting acknowledgment",
+            "displayName": "RabbitMQ - Unacknolwdged Message Count",
+            "displayNameShort": "RMQ - Msg NoAck",
+            "isDisabled": 0,
+            "name": "RABBITMQ_MESSAGES_UNACKNOWLEDGED",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "COUNT",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of messages ready for delivery",
+            "displayName": "RabbitMQ - Ready Message Count",
+            "displayNameShort": "RMQ - Msg Ready",
+            "isDisabled": 0,
+            "name": "RABBITMQ_MESSAGES_READY",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "COUNT",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of messages currently being handled",
+            "displayName": "RabbitMQ - Queued Message Count",
+            "displayNameShort": "RMQ - Messages",
+            "isDisabled": 0,
+            "name": "RABBITMQ_MESSAGES",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "COUNT",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of current connections",
+            "displayName": "RabbitMQ - Connection Count",
+            "displayNameShort": "RMQ - Connecitons",
+            "isDisabled": 0,
+            "name": "RABBITMQ_CONNECTIONS",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "COUNT",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of current connections in a state other than running",
+            "displayName": "RabbitMQ - Non-Running Connection Count",
+            "displayNameShort": "RMQ - XConnecitons",
+            "isDisabled": 0,
+            "name": "RABBITMQ_CONNECTIONS_NOTRUNNING",
+            "unit": "number"
+        },
+        {
             "defaultAggregate": "SUM",
             "defaultResolutionMS": 0,
             "description": "RabbitMQ - Disk Free",
@@ -8,6 +58,36 @@
             "displayNameShort": "RMQ - Disk Free",
             "isDisabled": 0,
             "name": "RABBITMQ_DISK_FREE",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "AVG",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of processes used by the RabbitMQ server",
+            "displayName": "RabbitMQ - Process Count",
+            "displayNameShort": "RMQ - Processes",
+            "isDisabled": 0,
+            "name": "RABBITMQ_PROC_USED",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "AVG",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of file descriptors used by the RabbitMQ server",
+            "displayName": "RabbitMQ - File Descriptor Usage",
+            "displayNameShort": "RMQ - FDs",
+            "isDisabled": 0,
+            "name": "RABBITMQ_FD_USED",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "AVG",
+            "defaultResolutionMS": 0,
+            "description": "RabbitMQ - Number of sockets used by the RabbitMQ server",
+            "displayName": "RabbitMQ - Socket Usage",
+            "displayNameShort": "RMQ - Sockets",
+            "isDisabled": 0,
+            "name": "RABBITMQ_SOCKETS_USED",
             "unit": "number"
         },
         {
